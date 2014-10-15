@@ -1,0 +1,26 @@
+{
+  "name": "telephone-numbers",
+  "version": "1.0.0",
+  "description": "Sample code to accompany the Sitepoint article on telephone numbers and JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telephone",
+    "phone",
+    "Sitepoint"
+  ],
+  "author": "Lukas White",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.9.7",
+    "google-libphonenumber": "0.0.5",
+    "lodash": "^2.4.1",
+    "world-countries": "^1.6.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.4"
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Telephone Numbers : A Simple Demonstration</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/intl-tel-input/build/css/intlTelInput.css">
+    <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/intl-tel-input/build/js/intlTelInput.min.js"></script>
+    <script type="text/javascript">
+	    $( document ).ready(function() {
+
+	    	$("#number").intlTelInput(
+		    	{
+		    		utilsScript : '/intl-tel-input/lib/libphonenumber/build/utils.js'
+		    	}
+	    	);
+
+	    	$("form").submit(function(){
+	    		if ($('#number').val() !== '') {
+	    			$('#results').html('Loading...')
+	    			$('#results').load('/lookup/' + encodeURIComponent($('#number').val()))	
+	    		}	else {
+	    			alert('Please enter a telephone number!');
+	    		}    		
+	    		return false;
+	    	})
+
+	    });    	
+    </script>
+</head>
+<body>
+
+	<div class="container">
+
+		<header>
+			<h1>Telephone Numbers : A Simple Demonstration</h1>
+		</header>
+
+		<div>
+			<p>Enter a telephone number below:</p>
+
+			<form>
+				<input type="tel" name="number" id="number" class="form-control">
+
+				<button type="submit" class="btn btn-primary">Go</button>
+			</form>
+
+		</div>
+
+		<div id="results">
+
+		</div>
+
+		<footer style="margin-top:500px;">
+			<p>This demo is designed to accompany <a href="http://www.sitepoint.com">this article</a>.</p>
+		</footer>
+
+	</div>
+	
+</body>
+</html>

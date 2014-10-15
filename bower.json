@@ -1,0 +1,28 @@
+{
+  "name": "telephone-numbers",
+  "version": "1.0.0",
+  "authors": [
+    "lukaswhite <hello@lukaswhite.com>"
+  ],
+  "description": "Sample code to accompany the Sitepoint article on telephone numbers and JS",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "telephone",
+    "phone",
+    "Sitepoint"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {    
+    "jquery": "~2.1.1",
+    "intl-tel-input": "~3.6.1"
+  }
+}
