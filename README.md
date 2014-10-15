@@ -4,7 +4,7 @@ This repository contains a bunch of code illustrating some of the ways in which 
 
 There are two principal components; an extremley simple Node.js / Express app demonstrating [this JQuery plugin](https://github.com/Bluefieldscom/intl-tel-input) along with Google's [libphonenumber](https://code.google.com/p/libphonenumber/).
 
-The second is a really simple example of how you might use the data from [this library](https://github.com/mledoze/countries) to deal with internatinal dialling codes.
+The second is a really simple example of how you might use the data from [this library](https://github.com/mledoze/countries) to deal with international dialling codes.
 
 This code is designed to accompany an upcoming article.
 
