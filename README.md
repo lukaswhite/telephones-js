@@ -6,7 +6,7 @@ There are two principal components; an extremley simple Node.js / Express app de
 
 The second is a really simple example of how you might use the data from [this library](https://github.com/mledoze/countries) to deal with international dialling codes.
 
-This code is designed to accompany an upcoming article.
+This code is designed to accompany [this article](http://www.sitepoint.com/working-phone-numbers-javascript/).
 
 ##Demo App
 
